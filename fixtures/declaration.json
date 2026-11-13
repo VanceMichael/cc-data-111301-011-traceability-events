@@ -1,0 +1,28 @@
+{
+  "type": "EPCISDocument",
+  "schemaVersion": "2.0",
+  "epcisBody": {
+    "eventList": [
+      {
+        "type": "AggregationEvent",
+        "eventID": "urn:uuid:event-1",
+        "eventTime": "2026-11-01T10:00:00+08:00",
+        "eventTimeZoneOffset": "+08:00",
+        "action": "ADD",
+        "parentID": "urn:epc:id:sscc:0614141.1234567890",
+        "childEPCs": [
+          "urn:epc:id:sgtin:0614141.107346.1",
+          "urn:epc:id:sgtin:0614141.107346.2"
+        ],
+        "bizStep": "packing",
+        "errorDeclaration": {
+          "declarationTime": "2026-11-02T10:00:00+08:00",
+          "reason": "incorrect_data",
+          "correctiveEventIDs": [
+            "urn:uuid:event-3"
+          ]
+        }
+      }
+    ]
+  }
+}
